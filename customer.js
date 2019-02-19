@@ -24,6 +24,7 @@ var start = function() {
         inquirer.prompt({
             name: 'product',
             type: 'rawlist',
+            message: 'What would you like to purchase?',
             choices: function(value) {
                 var choiceArray = [];
                 for (var i = 0; i < res.length; i++) {
